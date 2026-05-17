@@ -8,7 +8,6 @@ A data analytics project exploring workforce trends, AI displacement risk, and h
 - **Source:**[ [Kaggle — Tech Layoffs & Hiring Trends 2026](https://www.kaggle.com/)](https://www.kaggle.com/datasets/amaymishra11/tech-layoffs-and-hiring-trends-2026)
 - **Table used:** `tech_layoffs`
 - **Key columns:** `industry`, `company_name`, `reason_for_layoffs`, `top_hiring_role`, `ai_replacement_risk`, `layoffs_count`, `open_roles`, `job_security_score`
-
 ---
 
 ##  Tools Used
@@ -97,7 +96,7 @@ WHERE rn = 1;
 
 **Key Finding:** Data Scientist dominates AI (848 hires), Cloud, and Cybersecurity. Frontend Developer leads E-Commerce and FinTech. ML Engineer tops Gaming; DevOps Engineer leads Social Media.
 
-**Insight:** Data Scientist is the most universally in-demand role across tech — especially in AI, where hiring volume is nearly 3.5× higher than any other industry. Job seekers with data skills have the widest range of industry options available to them.
+**Insight:** Data Scientist is the most universally in-demand role across tech  especially in AI, where hiring volume is nearly 3.5× higher than any other industry. Job seekers with data skills have the widest range of industry options available to them.
 
 ---
 
@@ -119,7 +118,7 @@ ORDER BY avg_replacement_risk DESC;
 
 **Key Finding:** Social Media has the highest AI risk at 7.26. E-Commerce follows at 7.25, AI at 7.22. Gaming is the lowest at 7.16 — but the overall spread is very narrow (7.16–7.26).
 
-**Insight:** The narrow range across all industries suggests AI replacement risk is a sector-wide threat, not isolated to one area. No industry is truly "safe" from automation pressure — the entire tech landscape faces comparable risk levels.
+**Insight:** The narrow range across all industries suggests AI replacement risk is a sector-wide threat, not isolated to one area. No industry is truly "safe" from automation pressure, the entire tech landscape faces comparable risk levels.
 
 ---
 
@@ -183,14 +182,14 @@ ORDER BY total_open_roles DESC;
 
 ![Result](results/6.png)
 
-**Key Finding:** The AI industry has the most open roles at 9,341,688 — more than double the next industry. FinTech has the fewest open roles at 4,107,331.
+**Key Finding:** The AI industry has the most open roles at 9,341,688 which is more than double the next industry. FinTech has the fewest open roles at 4,107,331.
 
 **Insight:** AI's open roles signal massive demand that current talent supply cannot meet. FinTech's low open roles combined with its Overhiring Correction layoffs (Q1) suggests the sector has reached its hiring ceiling and is now in consolidation mode.
 
 ---
 
 
-**7. Business Question:** Are companies simultaneously cutting and hiring — and what does that signal about their strategy?
+**7. Business Question:** Are companies simultaneously cutting and hiring, and what does that signal about their strategy?
 
 **SQL Query:**
 ```sql
@@ -209,7 +208,7 @@ ORDER BY total_layoff_count DESC,
 
 ![Result](results/7.png)
 
-**Key Finding:** Every major company in the dataset shows high layoffs alongside significant open roles. OpenAI shows one of the largest simultaneous hire-and-fire behaviors (3.1M layoffs, 1.79M open roles).
+**Key Finding:** Every major company in the dataset shows high layoffs alongside significant open roles. Databricks shows one of the largest simultaneous hire-and-fire behaviors (3.37M layoffs, 1.74M open roles).
 
 **Insight:** These paradox companies are not shrinking — they are transforming. They are cutting legacy or generalist roles while aggressively hiring specialized talent. Job seekers should actively target these companies as they represent high demand for the right skill set.
 
@@ -234,7 +233,7 @@ ORDER BY totalOpenRoles DESC;
 
 **Key Finding:** The AI industry has the highest open roles (9.3M) with a mid-range AI risk (7.22). Social Media has the highest AI risk (7.26) yet still maintains 4.14M open roles. No strong inverse correlation is visible in the data.
 
-**Insight:** High AI risk does not suppress hiring — it changes the type of hiring. Industries under AI pressure still need human workers to build, manage, and operate AI systems. The assumption that "AI replaces = fewer jobs" is not supported by this data.
+**Insight:** High AI risk does not suppress hiring but it changes the type of hiring. Industries under AI pressure still need human workers to build, manage, and operate AI systems. The assumption that "AI replaces = fewer jobs" is not supported by this data.
 
 ---
 
@@ -257,7 +256,7 @@ ORDER BY avgReplacementRisk DESC;
 
 **Key Finding:** Anthropic has the highest AI risk (7.52) but is not the top in layoffs. Databricks leads in layoffs (3.3M) at only 7.14 risk. Apple and Microsoft have the lowest AI risk scores (7.02–7.04) yet still rank in the top layoff counts.
 
-**Insight:** AI replacement risk alone does not predict layoff volume. Layoffs are driven by broader business strategy — restructuring, cost management, and over-hiring corrections — not just automation risk. Macro business cycles are the real driver of layoff volume.
+**Insight:** AI replacement risk alone does not predict layoff volume. Layoffs are driven by broader business strategy like restructuring, cost management, and over-hiring corrections and not just automation risk. Macro business cycles are the real driver of layoff volume.
 
 ---
 
@@ -281,7 +280,7 @@ ORDER BY aireplace ASC,
 
 ![Result](results/10.png)
 
-**Key Finding:** Gaming ranks best overall — lowest AI risk (7.16) and among the lowest layoff counts (8.55M). FinTech is second with risk 7.17. Social Media ranks worst on all three dimensions combined.
+**Key Finding:** Gaming ranks best overall as lowest AI risk (7.16) and among the lowest layoff counts (8.55M). FinTech is second with risk 7.17. Social Media ranks worst on all three dimensions combined.
 
 **Insight:** Gaming and FinTech emerge as the most balanced industries for job stability. Gaming's reliance on human creativity limits full automation, while FinTech's regulatory environment requires human oversight. Job seekers prioritizing long-term stability should target these two sectors — especially in ML Engineer (Gaming) and Frontend Developer (FinTech) roles identified in Q2.
 
@@ -289,12 +288,12 @@ ORDER BY aireplace ASC,
 
 ## Overall Conclusions
 
-1. **AI and automation are reshaping — not eliminating — the job market.** Demand for technical talent remains high across all sectors despite layoffs.
-2. **Social Media is the most at-risk industry** — highest AI replacement risk, most AI-driven layoffs, and lowest job security score across all three metrics.
-3. **Gaming and FinTech offer the best stability balance** for job seekers in 2026, combining low AI risk, lower layoff counts, and healthy open roles.
-4. **Data Scientist is the most universally in-demand role** across the entire tech industry, dominating three out of seven sectors.
-5. **Paradox companies (Databricks, OpenAI, Google) are transforming, not shrinking** — cutting legacy roles while simultaneously posting millions of specialized openings.
-6. **AI risk does not directly cause more layoffs.** Business restructuring and overhiring corrections are stronger predictors of workforce reductions than automation risk scores.
+ **AI and automation are reshaping and not eliminating the job market.** 
+**Social Media is the most at-risk industry**
+**Gaming and FinTech offer the best stability balance** 
+ **Data Scientist is the most universally in-demand role**
+ **Paradox companies (Databricks, OpenAI, Google) are transforming, not shrinking**
+ **AI risk does not directly cause more layoffs.** 
 
 ---
 

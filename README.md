@@ -14,8 +14,7 @@ A data analytics project exploring workforce trends, AI displacement risk, and h
 
 - **Database:** MySQL 
 - **Query tool:** MySQL Workbench
-- 
----
+
 
 ## Business Questions
 
@@ -321,4 +320,4 @@ Tech_Layoffs_SQL_Analysis/
 
 ## Author
 
-Made by Rui Manalo · [LinkedIn](www.linkedin.com/in/rui-manalo-71350a376), [Portfolio](https://www.datascienceportfol.io/ruicourse3/projects/0)
+Made by Rui Manalo · [LinkedIn](www.linkedin.com/in/rui-manalo-71350a376), [Portfolio](https://www.datascienceportfol.io/ruicourse3)

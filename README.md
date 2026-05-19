@@ -14,6 +14,7 @@ A data analytics project exploring workforce trends, AI displacement risk, and h
 
 - **Database:** MySQL 
 - **Query tool:** MySQL Workbench
+- **Visualization:** PowerBI
 
 
 ## Business Questions
@@ -33,7 +34,7 @@ A data analytics project exploring workforce trends, AI displacement risk, and h
 
 ---
 
-## 📋 Findings
+##  Findings
 
 ---
 
@@ -63,6 +64,7 @@ WHERE rn = 1;
 **Results:**
 
 ![Result](results/1.png)
+![Visual](Visuals/Pb1.png)
 
 **Key Finding:** Social Media leads with 374 layoffs driven by AI Automation. FinTech and Cloud cite Overhiring Correction (367 and 361 respectively). Cybersecurity and E-Commerce are driven by Cost Cutting.
 
@@ -92,6 +94,7 @@ WHERE rn = 1;
 **Results:**
 
 ![Result](results/2.png)
+![Visual](Visuals/Pb2.png)
 
 **Key Finding:** Data Scientist dominates AI (848 hires), Cloud, and Cybersecurity. Frontend Developer leads E-Commerce and FinTech. ML Engineer tops Gaming; DevOps Engineer leads Social Media.
 
@@ -114,6 +117,7 @@ ORDER BY avg_replacement_risk DESC;
 **Results:**
 
 ![Result](results/3.png)
+![Visual](Visuals/Pb3.png)
 
 **Key Finding:** Social Media has the highest AI risk at 7.26. E-Commerce follows at 7.25, AI at 7.22. Gaming is the lowest at 7.16 — but the overall spread is very narrow (7.16–7.26).
 
@@ -131,11 +135,13 @@ SELECT company_name,
 FROM tech_layoffs
 GROUP BY company_name
 ORDER BY total_layoff_count DESC;
+
 ```
 
-**Results (Top 10):**
+**Results:**
 
 ![Result](results/4.png)
+![Visual](Visuals/Pb4.png)
 
 **Key Finding:** Databricks leads all companies at 3,336,757 total layoffs. Google (3.3M), Meta (3.18M), and Spotify (3.15M) follow closely. Microsoft and Apple rank lower at ~2.96M–3M.
 
@@ -158,6 +164,7 @@ ORDER BY avgAverageScore DESC;
 **Results:**
 
 ![Result](results/5.png)
+![Visual](Visuals/Pb5.png)
 
 **Key Finding:** Gaming scores highest at 5.9, followed by FinTech at 5.88. AI and Cloud sit mid-range at 5.8 and 5.78. Social Media is the lowest at 5.73.
 
@@ -180,6 +187,7 @@ ORDER BY total_open_roles DESC;
 **Results:**
 
 ![Result](results/6.png)
+![Visual](Visuals/Pb6.png)
 
 **Key Finding:** The AI industry has the most open roles at 9,341,688 which is more than double the next industry. FinTech has the fewest open roles at 4,107,331.
 
@@ -208,6 +216,7 @@ LIMIT 10;
 **Results (Top 10):**
 
 ![Result](results/7.png)
+![Visual](Visuals/Pb7.png)
 
 **Key Finding:** Every major company in the dataset shows high layoffs alongside significant open roles. Databricks shows one of the largest simultaneous hire-and-fire behaviors (3.37M layoffs, 1.74M open roles).
 
@@ -231,6 +240,7 @@ ORDER BY totalOpenRoles DESC;
 **Results:**
 
 ![Result](results/8.png)
+![Visual](Visuals/Pb8.png)
 
 **Key Finding:** The AI industry has the highest open roles (9.3M) with a mid-range AI risk (7.22). Social Media has the highest AI risk (7.26) yet still maintains 4.14M open roles. No strong inverse correlation is visible in the data.
 
@@ -251,9 +261,10 @@ GROUP BY company_name
 ORDER BY avgReplacementRisk DESC;
 ```
 
-**Results (Top 5 by AI Risk):**
+**Results:**
 
 ![Result](results/9.png)
+![Visual](Visuals/Pb9.png)
 
 **Key Finding:** Anthropic has the highest AI risk (7.52) but is not the top in layoffs. Databricks leads in layoffs (3.3M) at only 7.14 risk. Apple and Microsoft have the lowest AI risk scores (7.02–7.04) yet still rank in the top layoff counts.
 
@@ -280,6 +291,7 @@ ORDER BY aireplace ASC,
 **Results:**
 
 ![Result](results/10.png)
+![Visual](Visuals/Pb10.png)
 
 **Key Finding:** Gaming ranks best overall as lowest AI risk (7.16) and among the lowest layoff counts (8.55M). FinTech is second with risk 7.17. Social Media ranks worst on all three dimensions combined.
 
@@ -316,6 +328,9 @@ Tech_Layoffs_SQL_Analysis/
 │   └── 10_safest_industry.sql
 └── results/
     └── screenshots/
+└── Visuals/
+    └── screenshots/
+
 ```
 
 ---

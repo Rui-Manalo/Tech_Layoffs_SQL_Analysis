@@ -205,7 +205,7 @@ LIMIT 10;
 	
 ```
 
-**Results (Top 5):**
+**Results (Top 10):**
 
 ![Result](results/7.png)
 
